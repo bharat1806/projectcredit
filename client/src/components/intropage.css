@@ -1,0 +1,91 @@
+.set {
+  display: inline-block;
+  width: 50%;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: min-content;
+}
+.logo {
+  width: 25%;
+  border: transparent;
+  margin: 2px;
+  size-adjust: 50%;
+}
+.ulogo {
+  width: 8%;
+  margin-top: 35px;
+  border-radius: 25px;
+}
+
+.button.animated {
+  animation: pulse 2s infinite;
+}
+.input {
+  border-radius: 25px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+/* Button Styles */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #125b14;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background-color: #000000;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .set {
+    display: inline-block;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: min-content;
+  }
+  .logo {
+    width: 50%;
+    border: transparent;
+    margin: 10px;
+    height: 38px;
+    border-radius: 10px;
+  }
+  .ulogo {
+    width: 20%;
+    margin-top: 10px;
+  }
+  .btn {
+    width: 50%;
+  }
+  .input {
+    border-radius: 15px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid black;
+  }
+}
